@@ -5,7 +5,7 @@ import sys
 token = os.environ.get('LIFX_TOKEN')
 
 settings = {
-	"on": {
+	"up": {
 	  "power": "on",
 	  "color": "kelvin:4000",
 	  "brightness": 8.0,
@@ -19,7 +19,7 @@ settings = {
 	  "duration": 50
 	},
 
-	"off": {
+	"down": {
 	  "power": "on",
 	  "color": "kelvin:2500",
 	  "brightness": 0.0,
@@ -34,7 +34,7 @@ settings = {
 	}
 }
 
-lighting = settings.get("on")
+lighting = settings.get("up")
 
 def set_light_value_from_args():
 	global lighting
